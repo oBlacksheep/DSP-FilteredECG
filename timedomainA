@@ -2,13 +2,13 @@
 [s,fs]=audioread('audioDSP.wav');
 
 %Create time vector (in seconds)
-N=length(s);     %Number of samples
-t=(0:N-1) / fs;  %Time axis
+N=length(s);   % Number of samples
+t=(0:N-1)/fs;  % Time axis
 
 %Plot the signal in time domain
 figure;
 plot(t,s);
 xlabel('Time (seconds)');
 ylabel('Amplitude');
-title('Time-domain, s[n]');
+title('Input Signal Time-domain, s[n]');
 grid on;
